@@ -51,13 +51,13 @@ const Notification = () => {
                           </div>
                         </div>
                         <div className="col-9">
-                          <div className="d-flex align-items-center mb-3">
+                          <div className="d-flex align-items-center mb-1">
                             <h6 className="me-auto text-truncate mb-0 card-title">
                               {i}
                             </h6>
                           </div>
                           <div className="d-flex align-items-center">
-                            <div className="w-100 ellipsis me-auto">
+                            <div className="w-100 ellipsis me-auto text-secondary">
                               Hello! Yeah, I'm going to meet my friend of mine
                               at the departments stores as soon as possible.
                             </div>

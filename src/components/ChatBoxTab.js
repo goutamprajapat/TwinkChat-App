@@ -15,9 +15,9 @@ const ChatBoxTab = () => {
   ];
   return (
     <>
-      <div className="overflow-hidden faded">
+      <div className="overflow-hidden  faded">
         <div className="px-3">
-          <h4 className="my-3 ">Chats</h4>
+          <h5 className="my-3 ">Chats</h5>
           <div className="input-group main-color rounded-2">
             <span
               className="input-group-text bg-transparent border-0
@@ -50,20 +50,24 @@ const ChatBoxTab = () => {
                   <div className="card element cursor-pointer hover border-0 text-reset">
                     <div className="card-body">
                       <div className="row ">
-                        <div className="col d-flex justify-content-center g-0 p-2">
-                          <div className="avatar avatar-online bg-danger rounded-5 d-flex justify-content-center align-items-center ">
+                        <div className="col d-flex position-relative justify-content-center g-2 p-2">
+                          <span
+                            className="bg-success  position-absolute  rounded-5 extra-small ms-2"
+                            style={{
+                              width: "10px",
+                              height: "10px",
+                              right: "9px",
+                            }}
+                          ></span>
+                          <div className="avatar avatar-online bg-danger rounded-5 py-3 d-flex justify-content-center align-items-center ">
                             <span className="avatar-text fs-4">{i[0]}</span>
                           </div>
                         </div>
                         <div className="col-9">
-                          <div className="d-flex align-items-center mb-3">
-                            <h5 className="me-auto text-truncate mb-0 card-title">
+                          <div className="d-flex align-items-center">
+                            <h5 className="me-auto text-truncate card-title">
                               {i}
                             </h5>
-                            <span
-                              className="bg-success  rounded-5 extra-small ms-2"
-                              style={{ width: "10px", height: "10px" }}
-                            ></span>
                           </div>
                           <div className="d-flex align-items-center">
                             <div className="w-100 ellipsis me-auto">

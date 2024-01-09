@@ -58,17 +58,17 @@ const SlidePanel = () => {
               <div className="d-flex flex-column gap-5">
                 <CiEdit
                   onClick={() => handleTabClick("edit")}
-                  className="fs-4 hover-pink cursor-pointer "
+                  className="fs-5 hover-pink cursor-pointer "
                 />
                 <CiUser
                   onClick={() => handleTabClick("user")}
-                  className="fs-4 hover-pink  cursor-pointer"
+                  className="fs-5 hover-pink  cursor-pointer"
                 />
                 <div
                   onClick={() => handleTabClick("chat")}
                   className="position-relative cursor-pointer"
                 >
-                  <CiChat1 className="fs-4 hover-pink   " />
+                  <CiChat1 className="fs-5 hover-pink   " />
                   <span className="position-absolute chat-msg secondary-color rounded-5 px-2">
                     2
                   </span>
@@ -78,7 +78,7 @@ const SlidePanel = () => {
                   onClick={() => handleTabClick("notification")}
                   className="position-relative  cursor-pointer"
                 >
-                  <CiBellOn className="fs-4 hover-pink " />
+                  <CiBellOn className="fs-5 hover-pink " />
                   <span className="position-absolute bell-icon-msg secondary-color rounded-5 "></span>
                 </div>
               </div>
@@ -88,17 +88,17 @@ const SlidePanel = () => {
                 {theme === "light" ? (
                   <CiDark
                     onClick={() => themeMode("dark")}
-                    className="fs-4 hover-pink"
+                    className="fs-5 hover-pink"
                   />
                 ) : (
                   <CiBrightnessUp
                     onClick={() => themeMode("light")}
-                    className="fs-4 hover-pink"
+                    className="fs-5 hover-pink"
                   />
                 )}
                 <CiSettings
                   onClick={() => handleTabClick("settings")}
-                  className="fs-4 hover-pink"
+                  className="fs-5 hover-pink"
                 />
                 <CiUser className="fs-4 hover-pink" />
               </div>
@@ -107,14 +107,17 @@ const SlidePanel = () => {
         </div>
         <div
           style={{ maxHeight: "100vh" }}
-          className="main-color-2 col-2 overflow-hidden "
+          className="main-color-2 container col-3 overflow-hidden "
         >
           {tab.map((t, id) => {
             const { name, components } = t;
             return <div key={id}>{tabs === name && components}</div>;
           })}
         </div>
-        <div className="col main-color" style={{ maxHeight: "100vh" }}>
+        <div
+          className="col container main-color"
+          style={{ maxHeight: "100vh" }}
+        >
           <ChatBox />
         </div>
       </div>
