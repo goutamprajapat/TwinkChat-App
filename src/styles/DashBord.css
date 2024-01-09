@@ -1,0 +1,58 @@
+.main-container {
+  height: 100vh;
+  width: 100%;
+}
+.icon {
+  width: 12%;
+}
+
+.user span {
+  margin-top: -0.4rem;
+}
+
+.chat-msg {
+  font-size: 0.6rem;
+  right: -0.7rem;
+}
+
+.bell-icon-msg {
+  width: 0.8rem;
+  height: 0.8rem;
+  right: -0.1rem;
+}
+
+#searchmsg::placeholder {
+  color: #fff;
+  font-size: small;
+}
+#searchmsg {
+  font-size: small;
+}
+
+.avatar-online {
+  height: 100%;
+  width: 100%;
+}
+
+.scrooll-bar-chat::-webkit-scrollbar {
+  display: none;
+  transition: all 3s ease;
+  scroll-behavior: smooth;
+}
+
+.scrooll-bar-chat {
+  padding-bottom: 12rem;
+}
+
+.faded {
+  animation: fade 500ms ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

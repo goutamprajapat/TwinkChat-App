@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 64.2%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.main-color {
+  background-color: #0f044c;
+  color: #e6fffd;
+}
+.main-color-2 {
+  background: #141e61;
+  color: #e6fffd;
+}
+.secondary-color {
+  background-color: #ff016b;
+  color: #0f044c;
+}
+.hover:hover {
+  background: #a1fff26e;
+  transition: background 0.3s ease;
+}
+.hover-main:hover {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.259) 99%,
+    rgba(255, 255, 255, 0.1) 1%
+  );
+  transition: background 2s linear;
+}
+.element {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.1) 1%,
+    rgba(255, 255, 255, 0.1) 1%
+  );
+  background-blend-mode: lighten;
+  /* box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.hover-pink:hover {
+  color: #ff016b;
+  transition: color 0.5s ease;
+}
+.text-color-white {
+  color: #e6fffd;
+}
+.text-color-secondary {
+  color: #acbcff;
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* light */
+/* 
+#B799FF
+#ACBCFF
+#AEE2FF
+#E6FFFD 
+*/
+
+/* dark */
+/* 
+#0F044C
+#141E61
+#787A91
+#EEEEEE
+*/

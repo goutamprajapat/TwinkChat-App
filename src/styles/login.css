@@ -1,0 +1,16 @@
+.bg {
+  /* background: linear-gradient(to right #f6ba04, #b19339); */
+  /* background: hsla(236, 100%, 8%, 1); */
+  background: url("../images/bg.png") no-repeat;
+  background-size: cover;
+}
+
+.login {
+  background: #ffffff8f;
+
+  /* background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 35px 0px rgba(145, 192, 255, 0.5),
+    inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255); */
+}
+/* <a href="https://www.vecteezy.com/video/9884609-magic-particles-moving-background-animation">Magic Particles Moving Background Animation Stock Videos by Vecteezy</a> */
